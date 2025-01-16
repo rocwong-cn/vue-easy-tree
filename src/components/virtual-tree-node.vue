@@ -43,7 +43,7 @@
         @click.stop="handleExpandIconClick"
       ></span>
       <el-checkbox
-        v-if="showCheckbox"
+        v-if="showCheckbox || node.showCheckbox"
         v-model="node.checked"
         :key="node.key"
         :indeterminate="node.indeterminate"
